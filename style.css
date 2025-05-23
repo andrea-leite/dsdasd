@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.banner-container {
+    /* 1. Define a imagem de fundo */
+    background-image: url('images/banner.jpg'); /* Altere para o caminho da sua imagem */
+
+    /* 2. Propriedades para controle da imagem de fundo */
+    background-size: cover; /* Faz a imagem cobrir todo o elemento, cortando se necessário */
+    background-position: center center; /* Centraliza a imagem horizontal e verticalmente */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+
+    /* 3. Definir altura do banner (essencial para que a imagem apareça) */
+    height: 400px; /* Exemplo de altura fixa para desktop. Veja a parte de responsividade para algo dinâmico. */
+    width: 100%; /* Ocupa a largura total */
+
+    /* 4. Estilos para o conteúdo dentro do banner (opcional, mas comum) */
+    display: flex; /* Para centralizar o conteúdo */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    color: white; /* Cor do texto no banner */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra no texto para melhor legibilidade */
+}
+
+/* Estilos para o conteúdo interno do banner (opcional) */
+.banner-content {
+    text-align: center;
+    padding: 20px;
+}
+
+.banner h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.banner .btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.banner .btn:hover {
+    background-color: #0056b3;
+}
